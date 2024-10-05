@@ -1,0 +1,196 @@
+// Create your own map
+$verde-neon: (
+  "verde-neon": #28f100,
+);
+
+$violeta-personalizado: (
+  "violeta-personalizado": #100022,
+);
+
+.bg-verde-neon {
+  .btn-suma-resta {
+    width: 47px;
+    height: 47px;
+  }
+
+  .btn {
+    font-size: 25px;
+  }
+}
+
+// Merge the maps
+$theme-colors: map-merge($violeta-personalizado, $verde-neon);
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.cart {
+  position: relative;
+  margin-right: 20px;
+}
+
+.circleCart {
+  background-color: red;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  border-radius: 100%;
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 37px;
+
+  p {
+    margin: 0;
+    font-size: 12px;
+  }
+}
+
+#root {
+  background-color: #100022;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+.card__item {
+  border: none;
+  height: 100%;
+
+  svg {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+.card {
+  img {
+    background-image: radial-gradient(
+      circle at 75.52% 19.59%,
+      #ffffff 0,
+      #ffffff 10%,
+      #ffffff 20%,
+      #ffffff 30%,
+      #fff4f6 40%,
+      #e0e0e0 50%,
+      #bfccc8 60%,
+      #a5bbb1 70%,
+      #92ad9c 80%,
+      #84a18a 90%,
+      #7d977b 100%
+    );
+  }
+}
+
+.heroe {
+  img {
+    background-image: radial-gradient(
+      circle at 95.45% -4.17%,
+      #f4ff00 0,
+      #d6ff00 12.5%,
+      #b1ff00 25%,
+      #7fff00 37.5%,
+      #27f100 50%,
+      #00e112 62.5%,
+      #00d52a 75%,
+      #00cd40 87.5%,
+      #00ca58 100%
+    );
+    object-fit: contain;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  p {
+    color: white;
+  }
+
+  button {
+    p {
+      color: #000;
+    }
+
+    svg {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.imgContainer {
+  background-image: radial-gradient(
+    circle at 75.52% 19.59%,
+    #ffffff 0,
+    #ffffff 10%,
+    #ffffff 20%,
+    #ffffff 30%,
+    #fff4f6 40%,
+    #e0e0e0 50%,
+    #bfccc8 60%,
+    #a5bbb1 70%,
+    #92ad9c 80%,
+    #84a18a 90%,
+    #7d977b 100%
+  );
+  min-height: 100%;
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+
+  img {
+    object-fit: contain;
+  }
+}
+
+.itemCount {
+  background-color: #00a800;
+
+  a {
+    padding: 20px 0 20px 0;
+  }
+  .btn {
+    font-size: 29px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+    color: white;
+  }
+
+  .btn:hover {
+    background-color: #239400;
+  }
+}
+
+strong {
+  color: #00a800;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link:focus {
+  color: #fff;
+}
+
+.itemFavorite {
+  img {
+    height: 7rem;
+  }
+
+  svg {
+    font-size: 2rem;
+  }
+}
+
+.carousel-control-prev {
+  left: -20px;
+  width: 2rem;
+}
+
+.carousel-control-next {
+  right: -20px;
+  width: 2rem;
+}

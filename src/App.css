@@ -1,0 +1,21 @@
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.count {
+  font-size: 20px;
+  padding: 0 15px;
+}
+
+.height-100 {
+  position: relative;
+  width: 100%;
+}
+.rojo {
+  background: #39ff14;
+}
+.rojo:hover {
+  background: red;
+}
